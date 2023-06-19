@@ -11,3 +11,23 @@ button
     width: 12rem;
     height: 4rem;
 }
+
+
+@media (max-width : 400px)
+{
+    .button1_
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem
+    }
+
+    .button2_
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem
+    }
+}

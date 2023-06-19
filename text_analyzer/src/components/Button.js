@@ -18,6 +18,7 @@ function Button(props) {
 
     function copy()
     {
+        console.log(props.text)
         navigator.clipboard.writeText(props.text);
     }
 

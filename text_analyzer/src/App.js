@@ -6,17 +6,20 @@ import './App.css'
 
 function App() {
 
-  const [backgroundColor, setBackgroundColor] = useState('#111111');
-  const [fontColor, setfontColor] = useState('#111111');
+  const [backgroundColor, setBackgroundColor] = useState('');
+  const [fontColor, setfontColor] = useState('');
   
-  const pull_data = (data1,data2) => {
-   setBackgroundColor(data1)
-   setfontColor(data2)
-  }
-  
+ function pull_backgroundC(event)
+ {
+   setBackgroundColor(event.target.value)
+ }
+
+ function pull_fontC(event){
+   setfontColor(event.target.value);
+ }
   return (
   <main style={{backgroundColor: backgroundColor, color: fontColor}}>
-     <Navbar func={pull_data}/>
+     <Navbar func1={pull_backgroundC} func2 = {pull_fontC}/>
      <Textarea color = {fontColor}/>
   </main>
  
