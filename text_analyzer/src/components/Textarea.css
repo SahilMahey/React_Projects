@@ -1,0 +1,15 @@
+.text_area
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 20rem);
+
+}
+
+.form 
+{
+    width: 500px;
+    border: 10px solid greenyellow ;
+    font-size: 20px;
+}

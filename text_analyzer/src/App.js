@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar'
+import Textarea from './components/Textarea';
+
+import { useState } from 'react';
+import './App.css'
 
 function App() {
+
+  const [backgroundColor, setBackgroundColor] = useState('#111111');
+  const [fontColor, setfontColor] = useState('#111111');
+  
+  const pull_data = (data1,data2) => {
+   setBackgroundColor(data1)
+   setfontColor(data2)
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  <main style={{backgroundColor: backgroundColor, color: fontColor}}>
+     <Navbar func={pull_data}/>
+     <Textarea color = {fontColor}/>
+  </main>
+ 
+   );
 }
 
 export default App;

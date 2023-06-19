@@ -1,0 +1,13 @@
+.button_
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+button
+{
+    width: 12rem;
+    height: 4rem;
+}
