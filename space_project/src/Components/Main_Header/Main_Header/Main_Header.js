@@ -17,11 +17,12 @@ function Main_Header() {
     <div className="box">
     <Link  to = "/" className="container1"><img src={Logo} alt=""/></Link>
     <button onClick={handle_hamburger}><img src={!hamburger ? hamburger_icon : close_icon} alt="" /></button>
-    { hamburger && <div className="container3">
+     {hamburger && <div className="container3">
     <ul className="navbar">
-      <NavLink to="/">00 Home</NavLink><NavLink to="Destination">01 Destination</NavLink>
-      <NavLink to="Crew">03 Crew</NavLink>
-      <NavLink to="Technology">04 Technology</NavLink>
+      <NavLink to="/">00  Home</NavLink>
+      <NavLink to="Destination">01  Destination</NavLink>
+      <NavLink to="Crew">02  Crew</NavLink>
+      <NavLink to="Technology">03  Technology</NavLink>
     </ul>
     </div> }
     <div className="line"></div> 
