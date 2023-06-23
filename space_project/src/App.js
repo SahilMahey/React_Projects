@@ -22,16 +22,17 @@ function App() {
     <Routes>
     <Route path = "/" element = {<MainHeader />}>
       <Route path="/" element={<Home />} />
-      <Route path="Destination" element={<Destination />} />
-     
-      
+      <Route path="Destination" element={<Destination />}>
+      <Route path="Moon" element={<Moon/>} />
+      <Route path="Mars" element={<Mars/>} />
+      <Route path="Europa" element={<Europa/>} />
+      <Route path="Titan" element={<Titan/>} />
+      </Route>
       <Route path="Crew" element={<Crew />} />
       <Route path="Technology" element={<Technology />} />
     </Route>
-    <Route path="Moon" element={<Moon/>} />
-    <Route path="Mars" element={<Mars/>} />
-    <Route path="Europa" element={<Europa/>} />
-    <Route path="Titan" element={<Titan/>} />
+    
+    
     <Route path = "*" element ={<Error />} />
     </Routes>
 
