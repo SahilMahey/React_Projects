@@ -1,0 +1,28 @@
+.destination_container
+{
+    background: url('./background-destination-mobile.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+@media (min-width:650px) 
+{
+    .destination_container
+{
+    background: url('./background-destination-tablet.jpg') no-repeat;
+    
+}
+}
+
+@media (min-width:1000px) 
+{
+    .destination_container
+    {
+        background: url('./background-destination-desktop.jpg') no-repeat;
+    }
+
+
+
+
+}
