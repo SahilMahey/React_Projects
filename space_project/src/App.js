@@ -1,14 +1,16 @@
 
 import './App.css';
-import React, {useNavigate, useLocation, useEffect} from 'react'
+import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainHeader from '../src/Components/Main_Header/Main_Header/Main_Header.js'
 import Home from './Components/Home/Home'
 import Crew from './Components/Crew/Crew'
 import Technology from './Components/Technology/Technology'
 import Destination from './Components/Destination/Destination'
+
+
 import Error from './Components/Error/Error'
-import ContentDest from './Components/Destination/Content_dest';
+
 
 function App() {
   
@@ -24,7 +26,9 @@ function App() {
         <Route path= "Europa" />
         <Route path= "Titan" />
         </Route>
-      <Route path="Crew" element={<Crew />} />
+      <Route path="Crew" element={<Crew />} >
+        <Route path=":name" />
+      </Route>
       <Route path="Technology" element={<Technology />} />
     
     <Route path = "*" element ={<Error />} />

@@ -1,0 +1,31 @@
+.crew_container
+{
+    min-height: 100vh;
+    background-image: url('./background-crew-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.crew_image img
+{
+    height: 100px;
+    width: 100px;
+}
+
+@media (min-width: 1000px) {
+    .crew_container
+    {
+        background-image: url('./background-crew-tablet.jpg');
+    }
+
+}
+
+@media (min-width: 650px) {
+    .crew_container
+    {
+        background-image: url('./background-crew-desktop.jpg');
+    }
+
+}
