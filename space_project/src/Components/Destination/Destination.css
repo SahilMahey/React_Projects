@@ -1,79 +1,4 @@
-/* .destination_container {
-    background: url("./background-destination-mobile.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 
-  
-
-  .destination_image
-  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 6rem;
-  }
-  
-  .destination_container img
-  {
-    height: 200px;
-    width: 200px;
-  }
-  
-  .destination_container ul 
-  {
-    display: flex;
-    flex-direction: row;
-    color: #d0d6f9;
-    font: 1rem Barlow Condensed,sans-serif;
-    margin-bottom: 1rem;
-  }
-  
-  
-  .destination_container h3
-  {
-    font:  1.75rem Barlow Condensed,sans-serif;
-    color:white;
-    
-  }
-  
-  
-  @media (min-width: 650px) {
-    .destination_container {
-      background: url("./background-destination-tablet.jpg") no-repeat;
-      background-size: cover;
-    background-position: center;
-}
-
-.destination_container ul
-{
-  gap: 2rem;
-}
-
-.destination_container h3
-  {
-    font:  3rem Barlow Condensed,sans-serif;
-    color:white;
-    
-  }
-  }
-  
-  @media (min-width: 1000px) {
-    .destination_container {
-      background: url("./background-destination-desktop.jpg") no-repeat;
-      flex-direction: row;
-    }
-
-  }  
-   */
-  
 
 .destination_container {
     background: url("./background-destination-mobile.jpg") no-repeat;
@@ -85,7 +10,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    min-height: 100vh;
+   
 }
 
 
@@ -115,6 +40,7 @@
 .destination_content ul 
   {
     display: flex;
+    list-style: none;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -146,8 +72,8 @@
 }
 .destination_content_image img
 {
-  height: 300px;
-  width: 300px;
+  height: 100%;
+  width: 500px;
 }
 .destination_container ul
 {

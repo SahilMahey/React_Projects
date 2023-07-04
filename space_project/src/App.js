@@ -29,7 +29,9 @@ function App() {
       <Route path="Crew" element={<Crew />} >
         <Route path=":name" />
       </Route>
-      <Route path="Technology" element={<Technology />} />
+      <Route path="Technology" element={<Technology />} >
+          <Route path=":technology_name" />
+      </Route>
     
     <Route path = "*" element ={<Error />} />
     </Routes>
