@@ -1,0 +1,209 @@
+.technology_container
+{
+    min-height: 100vh;
+    background-image: url('../../../public/assets/technology/background-technology-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.technology_container_h3
+{
+    font: 2rem Barlow Condensed,sans-serif;
+    color: white;
+    letter-spacing: 0.1rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.technology_content
+{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:1rem;
+    flex: 1;
+}
+
+.technology_list
+{
+    order:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    
+}
+
+.technology_list_content
+{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     gap:0.5rem;
+}
+
+.technology_image img
+{
+    height: 200px;
+    width: 200px;
+}
+.technology_content ul 
+{
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.technology_heading 
+{
+    color :hsla(0,0%,100%,.5);
+    font: 1rem Bellefair ,sans-serif;
+}
+
+
+.technology_name
+{
+     font: 1.5rem Bellefair ,sans-serif;
+     color: white;
+}
+
+.technology_desc
+{
+    color: #d0d6f9;
+    font: 1.1rem Bellefair ,sans-serif;
+    text-align: center;
+    padding-inline: 2rem;
+}
+
+.technology_content ul a 
+{
+    color: black;
+    text-decoration: none;
+    font: 1.3rem Bellefair ,sans-serif;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: hsla(0,0%,100%,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.technology_content .active
+{
+    background-color: white;;
+}
+
+
+@media (min-width: 650px) {
+    .technology_container
+    {
+        background-image: url('../../../public/assets/technology/background-technology-tablet.jpg');
+    }
+    
+    
+
+    .technology_name
+    {
+     font: 3rem Bellefair ,sans-serif;
+     color: white;
+    }
+
+    .technology_desc
+    {
+        font-size: 1.3rem;
+    }
+    
+    .technology_content ul a 
+    {
+        height: 50px;
+        width: 50px;
+    }   
+}
+
+@media (min-width: 1000px) {
+    .technology_container
+    {
+        background-image: url('../../../public/assets/technology/background-technology-desktop.jpg');
+        align-items: flex-start;
+        justify-content: center;
+        
+     
+    }
+    
+    .technology_content
+    {
+        flex-direction:row-reverse;
+        width: 100vw;
+       
+      
+       
+     
+    }
+    .technology_list_content
+    {
+          align-items: flex-start;
+          
+    }
+    
+    .technology_list
+    {
+        flex-direction: row;
+        align-items: flex-start;
+       
+        gap: 3rem;
+        flex: 1;
+    }
+    .technology_list_content
+    {
+        gap:1rem
+    }
+    .technology_image
+    {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .technology_desc
+    {
+        padding: 0;
+        text-align: start;
+        width: 70%;
+        margin-top: 1rem;
+    }
+   
+    .technology_image img
+    {
+    height: 400px;
+    width: 450px;
+    }
+    
+    .technology_content ul 
+    {
+        flex-direction: column;
+    }
+    
+    .technology_content ul a 
+    {
+        height: 70px;
+        width: 70px;
+    } 
+    
+}
+
+

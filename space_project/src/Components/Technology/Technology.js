@@ -7,15 +7,17 @@ function Technology() {
   
  
 
- 
+  let count = 0;
   if (technology_name === undefined)
   {
     technology_name = 'Launchvehicle';
   }
   return (
     <div className='technology_container'>
-      <h3 className="technology_container_h3">03 SPACE LAUNCH 101</h3>
-      <div className="technology_content">
+       <h3 className="technology_container_h3">03 SPACE LAUNCH 101</h3>
+       <div className="technology_content">
+ 
+     
       <div className="technology_list">
       {array.technology
     .filter((element) => (element.name.replace(/\s/g, "") === technology_name))
@@ -33,21 +35,21 @@ function Technology() {
      {array.technology.map((element)=>
      {
       return (
-        <NavLink key = {element.name} to = {element.name.replace(/\s/g, "") === "Launchvehicle" ? "/Technology" : `${element.name.replace(/\s/g, "")}`} end>fgdf</NavLink>
+        <NavLink key = {element.name} to = {element.name.replace(/\s/g, "") === "Launchvehicle" ? "/Technology" : `${element.name.replace(/\s/g, "")}`} end>{++count}</NavLink>
       )
      })}
      </ul>
       </div>
-      {array.technology
+       {array.technology
     .filter((element) => (element.name.replace(/\s/g, "") === technology_name))
     .map((element) => (
 
       <div key = {element.name} className="technology_image">
-       <img src={element.images.landscape} alt="" />
+       <img src={element.images.portrait} alt="" />
       </div>
     ))}
-     
-      </div>
+    </div>
+      
     </div>
   )
 }
