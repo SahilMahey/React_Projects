@@ -56,7 +56,11 @@
   justify-content: center;
   gap: 1rem;
 }
-
+.destination_content ul a 
+{
+    color: white;
+    text-decoration: none;
+}
 
 @media (min-width: 650px) {
   .destination_container {

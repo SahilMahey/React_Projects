@@ -23,8 +23,8 @@ function Technology() {
     .filter((element) => (element.name.replace(/\s/g, "") === technology_name))
     .map((element) => (
 
-      <div key={element.name} className="crew_list_content">
-        <p className="technology_heading">THE TERMINOLOGY</p>
+      <div key={element.name} className="technology_list_content">
+        <p className="technology_heading">THE TERMINOLOGY...</p>
         <p className="technology_name">{element.name.toUpperCase()}</p>
         <p className="technology_desc">{element.description}</p>
         
