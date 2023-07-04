@@ -10,7 +10,7 @@ import { NavLink,useParams} from 'react-router-dom'
 function Crew() {
   let {name} = useParams();
   
-  console.log(name)
+ 
 
  
   if (name === undefined)
@@ -28,24 +28,31 @@ function Crew() {
     .map((element) => (
 
       <div key={element.name} className="crew_list_content">
-        <p className="crew_role">{element.role}</p>
-        <p className="crew_name">{element.name}</p>
+        <p className="crew_role">{element.role.toUpperCase()}</p>
+        <p className="crew_name">{element.name.toUpperCase()}</p>
         <p className="crew_desc">{element.bio}</p>
         
       </div>
     ))}
-          </div>
+         
      <ul>
      {array.crew.map((element)=>
      {
-      return <li key = {element.name}>
-        <NavLink to = {element.name.replace(/\s/g, "") === "DouglasHurley" ? "/Crew" : `${element.name.replace(/\s/g, "")}`} end>fsfsdfsdf</NavLink>
-      </li>
+      return (
+        <NavLink key = {element.name} to = {element.name.replace(/\s/g, "") === "DouglasHurley" ? "/Crew" : `${element.name.replace(/\s/g, "")}`} end></NavLink>
+      )
      })}
      </ul>
-     <div  className="crew_image">
-       <img src="/assets/crew/image-anousheh-ansari.webp" alt="" />
       </div>
+      {array.crew
+    .filter((element) => (element.name.replace(/\s/g, "") === name))
+    .map((element) => (
+
+      <div key = {element.name} className="crew_image">
+       <img src={element.images.webp} alt="" />
+      </div>
+    ))}
+     
       </div>
     </div>
   )
