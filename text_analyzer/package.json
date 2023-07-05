@@ -1,7 +1,6 @@
 {
   "name": "text_analyzer",
   "version": "0.1.0",
-  "homepage": "https://SahilMahey.github.io/React_Projects/text_analyzer",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
