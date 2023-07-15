@@ -37,6 +37,15 @@ export default function App() {
     meals_array();
   }, []);
 
+  useEffect(() => {
+   
+  
+    return () => {
+     localStorage.setItem("favorites", JSON.stringify(favourite_array))
+    }
+  }, [favourite_array])
+  
+
   const handle_search_click = async (event) => {
     event.preventDefault();
     let data = await fetch(
@@ -52,8 +61,9 @@ export default function App() {
  
    
     showModal(true);
-    console.log(modal);
+    
   }
+
 
   const handle_suprise_click = async (event) => {
     event.preventDefault();

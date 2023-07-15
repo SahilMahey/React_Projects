@@ -1,6 +1,6 @@
 import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
 import "./Card.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Card({
   element,
@@ -9,6 +9,10 @@ export default function Card({
   handle_modal, select_meal
 }) {
 
+  useEffect(() => {
+    // Update local storage whenever favourite_array changes
+    localStorage.setItem("favorites", JSON.stringify(favourite_array));
+  }, [favourite_array]);
 
   function add_favourite(event) {
     event.preventDefault();
@@ -25,15 +29,13 @@ export default function Card({
       if (val) {
         maker.push(element);
         setFavourite_array(maker);
+        
       }
     } else {
       maker.push(element);
       setFavourite_array(maker);
     }
-    localStorage.setItem("favorites", JSON.stringify(favourite_array))
-
-  
-    console.log(favourite_array);
+    
   }
 
   function handle_dish(event)

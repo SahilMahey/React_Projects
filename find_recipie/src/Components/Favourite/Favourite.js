@@ -6,7 +6,7 @@ export default function Favourite({
   select_meal
 }) {
   function remove_element(event) {
-    event.preventDefault();
+   
     let new_array = favourite_array.filter(
       (element) => element.idMeal !== event.currentTarget.getAttribute("id")
     );
