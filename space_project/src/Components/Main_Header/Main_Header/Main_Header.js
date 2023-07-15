@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Outlet, NavLink, Link } from 'react-router-dom';
 import Logo from './logo.svg';
-import array from '../../../data.json'
+
 import hamburger_icon from './icon-hamburger.svg'
 import close_icon from './icon-close.svg'
 import './Main_Header.css'
