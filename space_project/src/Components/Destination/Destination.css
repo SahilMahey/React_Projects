@@ -48,6 +48,11 @@
     font: 1rem Barlow Condensed,sans-serif;
   }
 
+  .destination_container ul
+{
+gap: 2rem;
+}
+
 .destination_content_list
 {
   display: flex;
