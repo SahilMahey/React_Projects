@@ -1,0 +1,19 @@
+.dish_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 910px) {
+  .dish_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 624px) {
+  .dish_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

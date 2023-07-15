@@ -1,0 +1,30 @@
+.favourite_container {
+  background-color: black;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 1rem;
+}
+
+.favourite_element {
+  display: flex;
+  flex-direction: column;
+  height: 3rem;
+  width: 4rem;
+}
+
+.favourite_element img {
+  border-radius: 50%;
+}
+
+.favourite_element button {
+  background: none;
+  border: none;
+  color: white;
+}
+
+.favourite_element button:hover {
+  background: none;
+  color: white;
+}
