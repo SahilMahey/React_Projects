@@ -17,7 +17,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/SahilMahey/React_Projects/tree/main/space_project]
-- Live Site URL: [https://symphonious-conkies-2b51c1.netlify.app]
+- Live Site URL: [https://main--vermillion-rabanadas-f1ff5a.netlify.app/]
 
 ## My process
 
